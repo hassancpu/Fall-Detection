@@ -1,5 +1,5 @@
-# Fall-Detection
-Fall Detection Using SVM
+## Fall-Detection
+### Fall Detection Using SVM
 
 For Running Successfully:
 
@@ -11,7 +11,7 @@ For Running Successfully:
 
 4.define the path to save the trained svm
 
-Now we can use the trained svm to detect fall and not-fall
+#### Now we can use the trained svm to detect fall and not-fall ####
 
 5.define the path to trained svm
 
