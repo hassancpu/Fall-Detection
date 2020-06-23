@@ -17,3 +17,6 @@ For Running Successfully:
 
 6.define the path to test video
 
+#### Note ####
+
+to extract features of fall and not fall press 'z'
