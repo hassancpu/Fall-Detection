@@ -346,7 +346,11 @@ def main():
     path_to_save = '/home/hassan/Fall/etracted_new_fall.txt'
     path_to_video = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/fall11 (online-video-cutter.com).mp4'
     fall.features_extractor(path_to_video, path_to_save)
-
+    
+    path_to_save = '/home/hassan/Fall/etracted_new_not_fall.txt'
+    path_to_video = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/fall11 (online-video-cutter.com).mp4'
+    fall.features_extractor(path_to_video, path_to_save)
+    
     ############## Train the SVM with extracted features ##################################################
     path_to_new_fall_features = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/etracted_new_fall.txt'
     path_to_new_not_fall_features = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/etracted_new_not_fall.txt'
