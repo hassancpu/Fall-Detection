@@ -19,4 +19,4 @@ For Running Successfully:
 
 #### Note ####
 
-to extract features of fall and not fall press 'z' key.
+To extract the features of fall and not fall events, press 'z' key.
