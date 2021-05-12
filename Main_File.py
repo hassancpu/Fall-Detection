@@ -1,11 +1,11 @@
 """"
 The Main File for Fall Detection
 
-Written by Hassan Keshvari Khojasteh!!!
+Written by Hassan Keshvari Khojasteh
 
 """
 
-""" Fist let import the necessary library!"""
+""" Fist let import the necessary library"""
 
 import math
 import numpy as np
