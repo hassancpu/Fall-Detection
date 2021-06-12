@@ -1,5 +1,5 @@
 """"
-The Main File for Fall Detection
+The main file for the fall detection task 
 
 Written by Hassan Keshvari Khojasteh
 
