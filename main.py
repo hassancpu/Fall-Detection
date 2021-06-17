@@ -199,8 +199,8 @@ class falldetection():
 
         # cross validation  score
 
-        svclassifier = SVC(kernel='linear', C=10000)
-        print(np.mean(cross_val_score(svclassifier, var, targ, cv=2)))
+        svclassifier_c = SVC(kernel='linear', C=10000)
+        print(np.mean(cross_val_score(svclassifier_c, var, targ, cv=2)))
 
         # save the trained svm
         _ = joblib.dump(svclassifier, path_to_save_trained_SVM, compress=9)
@@ -343,27 +343,27 @@ def main():
     fall = falldetection()
 
     ############## First Extract the defined features of video ############################################
-    path_to_save = '/home/hassan/Fall/etracted_new_fall.txt'
-    path_to_video = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/fall11 (online-video-cutter.com).mp4'
+    path_to_save = './etracted_new_fall.txt'
+    path_to_video = './fall1.mp4'
     fall.features_extractor(path_to_video, path_to_save)
     
-    path_to_save = '/home/hassan/Fall/etracted_new_not_fall.txt'
-    path_to_video = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/fall11 (online-video-cutter.com).mp4'
+    path_to_save = './etracted_new_not_fall.txt'
+    path_to_video = './fall1.mp4'
     fall.features_extractor(path_to_video, path_to_save)
     
     ############## Train the SVM with extracted features ##################################################
-    path_to_new_fall_features = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/etracted_new_fall.txt'
-    path_to_new_not_fall_features = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/etracted_new_not_fall.txt'
-    path_to_old_fall_features = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/etracted_old_fall.txt'
-    path_to_old_not_fall_features = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/etracted_old_not_fall.txt'
-    path_to_save_trained_SVM = '/home/hassan/Fall/trained_svm.joblib1.pkl'
+    path_to_new_fall_features = './etracted_new_fall.txt'
+    path_to_new_not_fall_features = './etracted_new_not_fall.txt'
+    path_to_old_fall_features = './etracted_old_fall.txt'
+    path_to_old_not_fall_features = './etracted_old_not_fall.txt'
+    path_to_save_trained_SVM = './trained_svm.joblib1.pkl'
 
     fall.train_svm(path_to_old_fall_features, path_to_old_not_fall_features, path_to_new_fall_features,
               path_to_new_not_fall_features, path_to_save_trained_SVM)
 
     ############## Detect the Fall with trined SVM ##################################################
-    path_svm = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/trained_svm.joblib.pkl'
-    path_video = '/mnt/E/MasterThesis/Python/Final_Fall_Finish/FALL/fall11 (online-video-cutter.com).mp4'
+    path_svm = './trained_svm.joblib.pkl'
+    path_video = './fall2.mp4'
 
     fall.fall_webcam(path_svm, path_video)
 
