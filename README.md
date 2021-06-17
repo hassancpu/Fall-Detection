@@ -16,9 +16,7 @@ For running successfully:
 5. Define the path to the trained svm.
 
 6. Define the path to a test video.
-
-#### Note ####
-
+ 
 To extract the features of fall and not fall events, press the 'z' button.
 
 #### Result ####
