@@ -20,3 +20,7 @@ For running successfully:
 #### Note ####
 
 To extract the features of fall and not fall events, press the 'z' button.
+
+
+https://user-images.githubusercontent.com/62461020/122333347-3eebbc00-cf4d-11eb-95a9-a6d4cd8a05d8.mp4
+
